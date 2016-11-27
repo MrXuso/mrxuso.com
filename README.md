@@ -1,2 +1,2 @@
 # mrxuso.com
-Repositorio de mi web personal (landing page)
+Landing page de mi web personal

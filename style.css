@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #FAFAFA;
+    nav: unset;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.section1{
+    background-color: #263238;
+    color: #FAFAFA;
+}
+
+header span{
+    font-weight: 300;
+    padding: 30px;
+    float: left;
+}
+
+nav{
+    position: relative;
+    top: 35px;
+    float: right;
+}
+
+nav a{
+    padding-right: 30px;
+}
+
+header a{
+    color: #FAFAFA;
+}
+
+header a:hover{
+    opacity: 0.85;
+    color: #FAFAFA;
+}
+
+header a:hover span{
+    opacity: 0.85;
+    color: #FAFAFA;
+}
+
+header a:active{
+    color: #FAFAFA;
+}
+
+.clear-float{
+    clear: both;
+}
+
+.section1 h3{
+    padding-top: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#img1{
+    display: block;
+    margin: 40px auto;
+    width: 50%;
+    max-width: 650px;
+}
+
+#img2{
+    display: block;
+    margin: 30px auto 0px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+#section2{
+    color: #263238;
+}
+
+#section2 h3{
+    color: #263238;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer{
+    background-color: #263238;
+    padding: 24px;
+    color: #FAFAFA
+}
+
+#copy-info{
+    float: left;
+    position: relative;
+    top: 4px;
+}
+
+.social img{
+    float: right;
+    width: 32px;
+    margin-left: 16px;
+}
+
+.social a:hover img{
+    opacity: 0.85;
+}
+
+#contact-btn{
+    width: auto;
+    display: block;
+    background-color: #FFC107;
+    font-family: 'Open Sans', sans-serif;
+    color: #FAFAFA;
+    margin: 0px auto 34px auto;
+}
+
+@media screen and (max-width: 800px){
+    
+    #page-title span{
+        width: 100%;
+    }
+    
+    .section1 h3{
+        font-size: 250%;
+        padding-top: 10px;
+    }
+    
+    nav{
+        display: block;
+        float: left;
+        top: -25px;
+        left: 30px;
+    }
+    
+    #section2 h3{
+        font-size: 135%;
+    }
+    
+    #img1{
+        width: 75%;
+    }
+    
+    .social img{
+        float: left;
+        margin-left: 0px;
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+}

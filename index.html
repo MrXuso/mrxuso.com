@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section1">
+            <header class="container">
+                <a href="#" id="page-title"><span class="h2">mrxuso.com</span></a>
+                <nav>
+                    <a href="/curso-android">Curso Android</a>
+                    <a href="#" class="hidden">Sobre mi</a>
+                    <a href="https://github.com/MrXuso">GitHub</a>
+                </nav>
+                <div class="clear-float"></div>
+            </header>
+            
+            <div class="container"><h3>¡Hola! Soy Jesús, futuro Ingeniero de Software.</h3></div>
+            
+            <img class="img-fluid m-x-auto" id="img1" src="src/hello_world0.png">
+            
+        </div>
+        
+        <div id="section2" class="container">
+            <div>
+                <h3>¡Hola! ¿Necesitas un diseño pulido para tu empresa o tu sitio web? ¿Una página web que te haga destacar? ¿O tal vez una aplicación de Android que te ayude a vender tus productos de forma sencilla?</h3>
+            </div>
+            
+            <img class="img-fluid" id="img2" src="src/android_studio.png">
+            
+            <a class="waves-effect waves-dark btn-large" id="contact-btn" href="mailto:jesus@mrxuso.com">¡Contacta conmigo!</a>
+        </div>
+        
+        
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <span id="copy-info" class="col-md-8">Francisco Jesús Jiménez Hidalgo &copy;2016</span>
+                    <div class="social col-md-4">
+                        <a href="https://www.youtube.com/c/mrxuso"><img src="src/social_youtube.png"></a>
+                        <a href="https://twitter.com/Mr_Xuso/"><img src="src/social_twitter.png"></a>
+                        <a href="https://www.instagram.com/themrxuso/"><img src="src/social_instagram.png"></a>
+                        <a href="https://github.com/MrXuso"><img src="src/social_github.png"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="js/materialize.min.js"></script>
+        
+        <script>
+            var i = 0;
+            var img = $("#img1")
+            img.click(function() {
+                i = (++i)%5
+                if (i == 4){
+                    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+                    i = 0;
+                }
+                img.attr("src", "src/hello_world" + i + ".png")
+            });
+        </script>
+        
+    </body>
+</html>
